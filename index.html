@@ -9,12 +9,26 @@
 </head>
 
 <body>
+    <div class="hero-unit" id="statsModule">
+        <div>
+            <strong id="items-counter"></strong>
+            <span>items in the list</span>
+        </div>
+        <div>
+            <span>Categories: </span>
+            <select name="categories" id="categories"></select>
+            <button id="reset-items-btn">Reset</button>
+        </div>
+    </div>
     <div id="peopleModule">
         <h1>Items</h1>
         <input id="item-txt" placeholder="Add items to list" type="text">
-        <button id="add-item-btn" placeholder="Add items to list">Add</button>
+        <button id="add-item-btn">Add</button>
         <ul id="items-list"></ul>
     </div>
+    <script src="js/ajaxUtil.js"></script>
+    <script src="js/pubsub.js"></script>
+    <script src="js/counter.js"></script>
     <script src="js/todoItems.js"></script>
 </body>
 

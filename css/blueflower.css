@@ -1,0 +1,272 @@
+/* General */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+
+/* Text */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 4.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+button,
+.btn {
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    margin-bottom: 1.5rem;
+    width: 90%;
+}
+
+ul {
+    margin-bottom: 2.5rem;
+}
+
+/* Grid */
+
+.container {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.products-module {
+    clear: both;
+}
+
+
+/* For devices larger than 550px */
+
+@media (min-width: 550px) {
+    h1 {
+        font-size: 5.0rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .column,
+    .columns {
+        /*margin-left: 4%;*/
+    }
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+    .three.columns {
+        width: 22%;
+    }
+    .six.columns {
+        width: 48%;
+    }
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+.btn.btn-add {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+}
+
+.btn.btn-add:hover {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
+}
+
+.btn.btn-reset {
+    color: #FFF;
+    background-color: #db1e38;
+    border-color: #4c0208;
+}
+
+.btn.btn-reset:hover {
+    color: #FFF;
+    background-color: #a2182b;
+    border-color: #4c0208;
+}
+
+
+/* Forms */
+
+input[type="text"],
+select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+
+/* Lists */
+
+ul {
+    list-style: circle inside;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.products-module li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgba(199, 204, 198, 0.41);
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin: 5px;
+    width: 181px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.products-module li:hover {
+    opacity: 1;
+}
+
+.products-module li span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.products-module li i {
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    font-style: normal;
+    background-color: #666;
+    padding: 2px 8px;
+    font-size: 60%;
+    color: white;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin-top: 3px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (max-width: 1000px) {
+  .categories-module .columns, .products-module .columns{
+      width: 90%
+    }
+  .btn{
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+    input,
+    select {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .products-module li {
+        width: 85%;
+        margin: 5px 0;
+    }
+
+    .btn{
+    width: 100%;
+  }
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+    .products-module li {
+        width: 80%;
+        /*margin: 5px 0;*/
+        display: block;
+    }
+
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+    .products-module li {
+        width: 40%;
+        margin: 5px;
+        display: inline-block;
+    }
+}

@@ -6,9 +6,9 @@ var productsController = (function() {
     var productsURL = "services/products/index.html";
     var categoriesURL = "services/categories/index.html";
 
-    //retrieve data from service
+    //testing async
+    //setTimeout(function(){  loadData(); }, 3000);
     loadData();
-
     function createMapCategories(data) {
         var tempProducts = data[productsURL];
         var tempCategories = data[categoriesURL];
